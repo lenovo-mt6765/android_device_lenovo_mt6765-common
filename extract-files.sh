@@ -63,6 +63,9 @@ function blob_fixup() {
         vendor/lib/libgeofence.so)
             "${PATCHELF}" --add-needed libshim_gps.so "${2}"
             ;;
+        vendor/lib/libmnl.so)
+            "${PATCHELF}" --add-needed libshim_gps.so "${2}"
+            ;;
     esac
 }
 
