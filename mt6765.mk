@@ -11,6 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
