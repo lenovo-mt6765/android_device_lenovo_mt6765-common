@@ -1,0 +1,29 @@
+From ee830e72c20ed9996900bec782308126e6aa93cf Mon Sep 17 00:00:00 2001
+From: jmpfbmx <jmpf.bmx@gmail.com>
+Date: Mon, 22 Apr 2024 18:42:52 +0200
+Subject: [PATCH] vendor: lineage: build: soong: Let the user build without
+ headers.
+
+Signed-off-by: jmpfbmx <jmpf.bmx@gmail.com>
+Change-Id: I591c8fa0d46490bf432c4ae6c9c32cea324c2a81
+---
+ build/soong/Android.bp | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/build/soong/Android.bp b/build/soong/Android.bp
+index 0a2b968..215e60d 100644
+--- a/build/soong/Android.bp
++++ b/build/soong/Android.bp
+@@ -27,7 +27,8 @@ lineage_generator {
+     name: "generated_kernel_includes",
+ 
+     // The headers make command
+-    cmd: "$(PATH_OVERRIDE_SOONG) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(TARGET_KERNEL_SOURCE) O=$(KERNEL_BUILD_OUT_PREFIX)$(genDir) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) headers_install",
++    // cmd: "$(PATH_OVERRIDE_SOONG) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(TARGET_KERNEL_SOURCE) O=$(KERNEL_BUILD_OUT_PREFIX)$(genDir) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) headers_install",
++    cmd: "echo 'd'",
+ 
+     // Directories that can be imported by a cc_* module generated_headers property
+     export_include_dirs: [
+-- 
+2.44.0
+
