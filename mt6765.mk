@@ -55,6 +55,15 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.a2dp@1.0.vendor \
     android.hardware.bluetooth@1.0.vendor
 
+# Broadcastradio
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0 \
+    android.hardware.broadcastradio@1.1 \
+    android.hardware.broadcastradio@2.0 \
+    android.hardware.broadcastradio@1.0.vendor \
+    android.hardware.broadcastradio@1.1.vendor \
+    android.hardware.broadcastradio@2.0.vendor
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/agps_profiles_conf2.xml
