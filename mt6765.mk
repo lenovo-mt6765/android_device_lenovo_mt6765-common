@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     android.hardware.secure_element@1.0.vendor
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0.vendor
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
