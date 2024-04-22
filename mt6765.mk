@@ -258,6 +258,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0.vendor
 
+# Text classifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_hash \
+    libtextclassifier_hash.vendor
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
