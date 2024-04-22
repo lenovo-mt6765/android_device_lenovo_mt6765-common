@@ -25,9 +25,6 @@
         <!--DOLBY DAP-->
         <library name="dap" path="libswdap.so"/>
         <!--DOLBY END-->
-        <!--DOLBY VQE-->
-        <library name="vqe" path="libswvqe.so"/>
-        <!--DOLBY END-->
     </libraries>
 
     <!-- list of effects to load.
@@ -70,9 +67,6 @@
         <effect name="agc" library="pre_processing" uuid="3387eb70-9896-4338-90f5-b2de883864c9"/>
         <!--DOLBY DAP-->
         <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
-        <!--DOLBY END-->
-        <!--DOLBY VQE-->
-        <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
     </effects>
 
