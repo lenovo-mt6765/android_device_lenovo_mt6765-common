@@ -1,0 +1,5 @@
+cc_library {
+    name: "libshim_gps",
+    srcs: ["libshim_gps.cpp"],
+    vendor: true,
+}

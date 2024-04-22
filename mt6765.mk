@@ -258,6 +258,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0.vendor
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_gps
+
 # Text classifier
 PRODUCT_PACKAGES += \
     libtextclassifier_hash \
