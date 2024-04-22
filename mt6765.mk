@@ -136,6 +136,16 @@ PRODUCT_PACKAGES += \
     libpuresoftkeymasterdevice.vendor
 
 # Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail_vendor \
+    libavservices_minijail.vendor \
+    libclang_rt.ubsan_standalone-aarch64-android \
+    libopus \
+    libstagefright_softomx.vendor \
+    libvorbisidec \
+    libvpx
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
