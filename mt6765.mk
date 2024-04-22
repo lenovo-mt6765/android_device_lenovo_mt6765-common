@@ -71,6 +71,14 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     libstdc++.vendor
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.4-service.clearkey \
+    libdrmclearkeyplugin \
+    libmockdrmcryptoplugin
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/agps_profiles_conf2.xml
