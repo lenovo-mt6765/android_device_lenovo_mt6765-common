@@ -28,4 +28,12 @@ extern "C" {
                                 pid, pAttributes, doNotReconnect, maxRequiredSpeed, selectedDeviceId,
                                 opPackageName);
             }
+
+    void _ZN7android11AudioSourceC1EPK18audio_attributes_tRKNS_8String16Ejjjjii28audio_microphone_direction_tf(const audio_attributes_t *attr, const String16 &opPackageName, uint32_t sampleRate, uint32_t channelCount, uint32_t outSampleRate, uid_t uid, pid_t pid, audio_port_handle_t selectedDeviceId, audio_microphone_direction_t selectedMicDirection, float selectedMicFieldDimension);
+
+   void _ZN7android11AudioSourceC1E14audio_source_tRKNS_8String16Ejjjjii28audio_microphone_direction_tf(__attribute__((unused)) audio_source_t inputSource, const String16 &opPackageName, uint32_t sampleRate, uint32_t channelCount, uint32_t outSampleRate, uid_t uid, pid_t pid, audio_port_handle_t selectedDeviceId, audio_microphone_direction_t selectedMicDirection, float selectedMicFieldDimension) {
+        audio_attributes_t attr = AUDIO_ATTRIBUTES_INITIALIZER;
+        attr.source = AUDIO_SOURCE_DEFAULT;
+        _ZN7android11AudioSourceC1EPK18audio_attributes_tRKNS_8String16Ejjjjii28audio_microphone_direction_tf(&attr, opPackageName, sampleRate, channelCount, outSampleRate, uid, pid, selectedDeviceId, selectedMicDirection, selectedMicFieldDimension);
+    }
 }
