@@ -272,7 +272,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_gps
+    libshim_gps \
+    libshim_vtservice
 
 # Text classifier
 PRODUCT_PACKAGES += \
