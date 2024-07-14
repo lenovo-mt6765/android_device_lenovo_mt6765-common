@@ -889,9 +889,9 @@ vendor/lib64/librgbwlightsensor.so
 vendor/lib/hw/sound_trigger.primary.mt6765.so
 vendor/lib64/hw/sound_trigger.primary.mt6765.so
 
-# Neural Network
-vendor/lib/libneuropilot_hal_utils.so
-vendor/lib64/libneuropilot_hal_utils.so
+# Neural Network - from amar_row_lte - TB-X306X_USR_S230973_2404022232_V8_BMP_ROW
+vendor/lib/libneuropilot_hal_utils.so|79888a4d0202ac7ac8552437726edf7e2c31772d
+vendor/lib64/libneuropilot_hal_utils.so|76dccfc3139109b18251716815956d960691f566
 
 # OMX
 lib64/extractors/libmtkadpcmextractor.so
