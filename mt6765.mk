@@ -82,6 +82,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.2.vendor \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin
 
@@ -125,6 +126,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
+    android.hidl.memory@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -146,6 +148,10 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so
+
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0.vendor
 
 # Media
 PRODUCT_PACKAGES += \
@@ -234,8 +240,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio.config@1.0 \
     android.hardware.radio.config@1.1 \
+    android.hardware.radio.config@1.2 \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.radio.config@1.1.vendor \
+    android.hardware.radio.config@1.2.vendor \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
