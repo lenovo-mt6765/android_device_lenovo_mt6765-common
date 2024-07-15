@@ -5,7 +5,6 @@ VENDOR_LOG_LEVEL=S
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    log.tag.stats_log=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.CdmaMoSms=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.CdmaMtSms=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RILMUXD=$(VENDOR_LOG_LEVEL) \
