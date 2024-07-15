@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
+    libshim_extractors \
     libshim_gps \
     libshim_memset \
     libshim_mtkavenhancements \
