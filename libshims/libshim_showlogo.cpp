@@ -29,4 +29,10 @@ extern "C" {
     ui::StaticDisplayInfo* staticInfo = reinterpret_cast<ui::StaticDisplayInfo*>(info);
     return _ZN7android21SurfaceComposerClient20getStaticDisplayInfoERKNS_2spINS_7IBinderEEEPNS_2ui17StaticDisplayInfoE(display, staticInfo);
   }
+
+  void _ZN7android14SurfaceControl10getSurfaceEv(void);
+
+  void _ZNK7android14SurfaceControl10getSurfaceEv(void) {
+    _ZN7android14SurfaceControl10getSurfaceEv();
+  }
 }
