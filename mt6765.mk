@@ -273,6 +273,8 @@ PRODUCT_PACKAGES += \
     init.mt8768.usb.rc \
     init.project.rc \
     init.recovery.mt6765.rc \
+    init.recovery.mt8768.rc \
+    init.recovery.usb.rc \
     init.sensor_1_0.rc \
     ueventd.mt6765.rc
 
