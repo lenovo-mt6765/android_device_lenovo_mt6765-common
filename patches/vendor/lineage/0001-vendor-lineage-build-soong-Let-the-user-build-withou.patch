@@ -1,6 +1,6 @@
-From a605518a08fc0025d6f0bbab704c101811670c26 Mon Sep 17 00:00:00 2001
+From d882cb108544e061e2ed83d624e42a7721fbb0fc Mon Sep 17 00:00:00 2001
 From: jmpfbmx <jmpf.bmx@gmail.com>
-Date: Mon, 15 Jul 2024 18:41:21 +0200
+Date: Fri, 19 Jul 2024 15:13:11 +0200
 Subject: [PATCH] vendor: lineage: build: soong: Let the user build without
  headers.
 
@@ -11,7 +11,7 @@ Change-Id: I591c8fa0d46490bf432c4ae6c9c32cea324c2a81
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/build/soong/Android.bp b/build/soong/Android.bp
-index c549c34..de50414 100644
+index 2029d7e..3cbf923 100644
 --- a/build/soong/Android.bp
 +++ b/build/soong/Android.bp
 @@ -21,7 +21,8 @@ lineage_generator {
