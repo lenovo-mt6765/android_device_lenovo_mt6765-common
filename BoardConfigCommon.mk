@@ -72,6 +72,7 @@ TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Platform
+BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6765
 
 # Properties
