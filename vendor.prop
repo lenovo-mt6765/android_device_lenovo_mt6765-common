@@ -88,18 +88,7 @@ lockscreen.rot_override=true
 vendor.debug.log.coredump.enable=n
 ro.vendor.connsys.dedicated.log=1
 persist.meta.dumpdata=0
-persist.log.tag.DCT=D
 persist.vendor.log.tel_log_ctrl=1
-persist.log.tag.RtcEccNumberController=D
-persist.log.tag.RmcEccNumberUrcHandler=D
-persist.log.tag.RpPhoneNumberController=D
-persist.log.tag.MTKSST=D
-persist.log.tag.RmcNwHdlr=D
-persist.log.tag.RmcNwReqHdlr=D
-persist.log.tag.RmcNwRTReqHdlr=D
-persist.log.tag.RmcRatSwHdlr=D
-persist.log.tag.RtcRatSwCtrl=D
-persist.log.tag.MtkPhoneSwitcher=D
 
 # Media
 ro.have_aacencode_feature=1
