@@ -22,7 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl-mediatek \
+    android.hardware.audio@7.1-impl-mediatek \
     android.hardware.audio.service \
     android.hardware.audio@7.0.vendor \
     android.hardware.audio.effect@7.0-impl \
