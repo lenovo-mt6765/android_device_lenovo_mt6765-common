@@ -21,10 +21,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0-impl \
+    android.hardware.audio@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.audio@5.0.vendor \
-    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio@6.0.vendor \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.bluetooth.default \
     audio.r_submix.default \
