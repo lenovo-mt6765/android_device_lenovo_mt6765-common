@@ -9,7 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -21,7 +22,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
+    android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio.service \
     android.hardware.audio@6.0.vendor \
     android.hardware.audio.effect@6.0-impl \
